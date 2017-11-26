@@ -9,7 +9,7 @@ import leoprok.me.leosportfolio.interfaces.FactoryInterface;
 /**
  * Load website to web view
  */
-public class WebLoader implements FactoryInterface {
+final class WebLoader implements FactoryInterface {
 
     private WebView mWebView;
     private Context mContext;

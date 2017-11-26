@@ -10,7 +10,9 @@ import leoprok.me.leosportfolio.interfaces.FactoryInterface;
  */
 
 public class FactoryBuilder {
+    //set the website of webvie and enabled javascript
     public static FactoryInterface getWebView(WebView webView, Context context){
         return new WebLoader(webView,context);
     }
+
 }
