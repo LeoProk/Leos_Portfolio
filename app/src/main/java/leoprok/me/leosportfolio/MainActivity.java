@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             //call when user click on the phone icon
             case R.id.call:
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + R.string.phone));
                 //check if the permission is enabled
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + R.string.phone));
                     startActivity(intent);
                 }else {
                     ActivityCompat.requestPermissions(this,
